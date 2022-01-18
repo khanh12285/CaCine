@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         DefaultDataSourceFactory dataSourceFactory = new DefaultDataSourceFactory(this, null, httpDataSourceFactory);
 
         //link hết hạn thì get link khác
-        String playUrl = "https://hni-fpt-001-livecdn-vthn2-vnd.vieon.vn/cf9b935cee9b35cc7b119fd9b2086dbe/1642527536165/wz/livetv_origin_drm/kplus_1_22_08_2021.smil/manifest.mpd";
+        String playUrl = "https://kplus-livecdn.fptplay.net/drmlive/27082021k1pm_2000.stream/manifest.mpd";
         MediaSource mediaSource = new DashMediaSource.Factory(dataSourceFactory)
                 .setDrmSessionManager(new DefaultDrmSessionManager.Builder().setUuidAndExoMediaDrmProvider(C.CLEARKEY_UUID, FrameworkMediaDrm.DEFAULT_PROVIDER).setMultiSession(false).build(new MediaDrmCallback() {
                     @Override
